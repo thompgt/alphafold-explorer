@@ -19,7 +19,7 @@ jobs:
       - run: npm ci
 
       - name: Typecheck
-        run: npx tsc --noEmit
+        run: npm run typecheck
 
       - name: Test
         # Every test runs against an in-memory DuckDB and a stub model provider,
