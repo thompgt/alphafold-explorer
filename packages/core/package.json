@@ -12,6 +12,6 @@
     "migrate": "tsx src/cli/migrate.ts"
   },
   "dependencies": {
-    "@duckdb/node-api": "^1.1.3-alpha.6"
+    "@duckdb/node-api": "^1.5.5-r.4"
   }
 }
