@@ -1,0 +1,125 @@
+# Curated demo set: ~100 human (Homo sapiens) UniProt accessions.
+#
+# Chosen for variety rather than coverage — well-folded enzymes sit next to
+# famously disordered proteins (TP53, SNCA, MAPT) so the confidence features and
+# the disordered-region annotations have something real to say. Lines beginning
+# with '#' and blank lines are ignored; anything after the accession on a line is
+# treated as a comment.
+
+# --- Oxygen transport / classic small folds ---
+P69905  HBA1    Hemoglobin subunit alpha
+P68871  HBB     Hemoglobin subunit beta
+P02144  MB      Myoglobin
+P01308  INS     Insulin
+P61626  LYZ     Lysozyme C
+P02768  ALB     Serum albumin
+P02766  TTR     Transthyretin
+P00450  CP      Ceruloplasmin
+P02787  TF      Serotransferrin
+P01009  SERPINA1 Alpha-1-antitrypsin
+
+# --- Intrinsically disordered / partly disordered ---
+P04637  TP53    Cellular tumor antigen p53
+P37840  SNCA    Alpha-synuclein
+P10636  MAPT    Microtubule-associated protein tau
+P38398  BRCA1   Breast cancer type 1 susceptibility protein
+Q09472  EP300   Histone acetyltransferase p300
+P03372  ESR1    Estrogen receptor
+P10275  AR      Androgen receptor
+Q13043  STK4    Serine/threonine-protein kinase 4
+P46527  CDKN1B  Cyclin-dependent kinase inhibitor 1B
+P38936  CDKN1A  Cyclin-dependent kinase inhibitor 1
+
+# --- Kinases ---
+P00533  EGFR    Epidermal growth factor receptor
+P06239  LCK     Tyrosine-protein kinase Lck
+P12931  SRC     Proto-oncogene tyrosine-protein kinase Src
+P31749  AKT1    RAC-alpha serine/threonine-protein kinase
+Q02750  MAP2K1  Dual specificity mitogen-activated protein kinase kinase 1
+P28482  MAPK1   Mitogen-activated protein kinase 1
+Q05655  PRKCD   Protein kinase C delta type
+P24941  CDK2    Cyclin-dependent kinase 2
+P11802  CDK4    Cyclin-dependent kinase 4
+P06493  CDK1    Cyclin-dependent kinase 1
+P42345  MTOR    Serine/threonine-protein kinase mTOR
+P49841  GSK3B   Glycogen synthase kinase-3 beta
+Q9Y6K9  IKBKG   NF-kappa-B essential modulator
+P36507  MAP2K2  Dual specificity mitogen-activated protein kinase kinase 2
+Q13153  PAK1    Serine/threonine-protein kinase PAK 1
+
+# --- Metabolic enzymes ---
+P00558  PGK1    Phosphoglycerate kinase 1
+P04406  GAPDH   Glyceraldehyde-3-phosphate dehydrogenase
+P06733  ENO1    Alpha-enolase
+P14618  PKM     Pyruvate kinase PKM
+P00338  LDHA    L-lactate dehydrogenase A chain
+P07954  FH      Fumarate hydratase
+P31040  SDHA    Succinate dehydrogenase flavoprotein subunit
+P00505  GOT2    Aspartate aminotransferase, mitochondrial
+P11413  G6PD    Glucose-6-phosphate 1-dehydrogenase
+P00918  CA2     Carbonic anhydrase 2
+P07451  CA3     Carbonic anhydrase 3
+P00966  ASS1    Argininosuccinate synthase
+P22557  ALAS2   5-aminolevulinate synthase, erythroid-specific
+P05091  ALDH2   Aldehyde dehydrogenase, mitochondrial
+P00325  ADH1B   Alcohol dehydrogenase 1B
+
+# --- Cytoskeleton and motors ---
+P60709  ACTB    Actin, cytoplasmic 1
+P68363  TUBA1B  Tubulin alpha-1B chain
+P07437  TUBB    Tubulin beta chain
+P35579  MYH9    Myosin-9
+P08670  VIM     Vimentin
+P02545  LMNA    Prelamin-A/C
+Q9Y490  TLN1    Talin-1
+P21333  FLNA    Filamin-A
+P12814  ACTN1   Alpha-actinin-1
+P63261  ACTG1   Actin, cytoplasmic 2
+
+# --- Chaperones, proteostasis, ubiquitin ---
+P0DMV8  HSPA1A  Heat shock 70 kDa protein 1A
+P07900  HSP90AA1 Heat shock protein HSP 90-alpha
+P11142  HSPA8   Heat shock cognate 71 kDa protein
+P10809  HSPD1   60 kDa heat shock protein, mitochondrial
+P62987  UBA52   Ubiquitin-60S ribosomal protein L40
+P0CG48  UBC     Polyubiquitin-C
+Q06830  PRDX1   Peroxiredoxin-1
+P30044  PRDX5   Peroxiredoxin-5
+P04179  SOD2    Superoxide dismutase [Mn], mitochondrial
+P00441  SOD1    Superoxide dismutase [Cu-Zn]
+
+# --- Nucleic acid binding ---
+P68431  H3C1    Histone H3.1
+P62805  H4C1    Histone H4
+P0C0S8  H2AC11  Histone H2A type 1
+P06748  NPM1    Nucleophosmin
+P09874  PARP1   Poly [ADP-ribose] polymerase 1
+P24928  POLR2A  DNA-directed RNA polymerase II subunit RPB1
+Q9NZL4  HSPBP1  Hsp70-binding protein 1
+P49711  CTCF    Transcriptional repressor CTCF
+Q01844  EWSR1   RNA-binding protein EWS
+P35637  FUS     RNA-binding protein FUS
+
+# --- Membrane, transport, receptors ---
+P08183  ABCB1   Multidrug resistance protein 1
+P13569  CFTR    Cystic fibrosis transmembrane conductance regulator
+P05023  ATP1A1  Sodium/potassium-transporting ATPase subunit alpha-1
+P11166  SLC2A1  Solute carrier family 2, facilitated glucose transporter member 1
+P08588  ADRB1   Beta-1 adrenergic receptor
+P07550  ADRB2   Beta-2 adrenergic receptor
+P08172  CHRM2   Muscarinic acetylcholine receptor M2
+P29274  ADORA2A Adenosine receptor A2a
+P30988  CALCR   Calcitonin receptor
+P01730  CD4     T-cell surface glycoprotein CD4
+
+# --- Immunity and signalling ---
+P01375  TNF     Tumor necrosis factor
+P05231  IL6     Interleukin-6
+P60568  IL2     Interleukin-2
+P01579  IFNG    Interferon gamma
+P01584  IL1B    Interleukin-1 beta
+P02649  APOE    Apolipoprotein E
+P01023  A2M     Alpha-2-macroglobulin
+P00734  F2      Prothrombin
+P02671  FGA     Fibrinogen alpha chain
+P01031  C5      Complement C5
