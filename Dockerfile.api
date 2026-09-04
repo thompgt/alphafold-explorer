@@ -1,0 +1,32 @@
+# The API and the one-shot workers share an image: they share all their code, and a
+# second 300 MB layer stack to run the same npm workspace would buy nothing.
+FROM node:22-alpine
+
+WORKDIR /app
+
+# Install with the lockfile first so a source-only change does not re-resolve deps.
+COPY package.json package-lock.json ./
+COPY packages/core/package.json   packages/core/
+COPY packages/ingest/package.json packages/ingest/
+COPY packages/llm/package.json    packages/llm/
+COPY apps/api/package.json        apps/api/
+RUN npm ci --omit=dev --workspace @afx/api --workspace @afx/ingest \
+      --workspace @afx/llm --workspace @afx/core --include-workspace-root \
+ && npm install --no-save tsx@4.19.2
+
+COPY tsconfig.json ./
+COPY packages ./packages
+COPY apps/api ./apps/api
+COPY data/accessions.txt ./data/accessions.txt
+
+# TypeScript is executed directly by tsx rather than compiled: the whole app is
+# ESM TypeScript with no build step, and tsx is the same runtime used in development.
+ENV NODE_ENV=production \
+    AFX_DB_PATH=/data/afdb.duckdb \
+    AFX_API_PORT=3000
+
+RUN mkdir -p /data && chown -R node:node /data /app
+USER node
+
+EXPOSE 3000
+CMD ["npm", "run", "start", "-w", "@afx/api"]

@@ -1,0 +1,10 @@
+node_modules
+**/node_modules
+**/dist
+data/*.duckdb
+data/*.duckdb.wal
+data/cache
+data/structures
+.git
+.github
+**/*.log

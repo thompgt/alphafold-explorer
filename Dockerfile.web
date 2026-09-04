@@ -1,0 +1,22 @@
+FROM node:22-alpine AS build
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+COPY apps/web/package.json apps/web/
+RUN npm ci --workspace @afx/web --include-workspace-root
+
+COPY tsconfig.json ./
+COPY apps/web ./apps/web
+RUN npm run build -w @afx/web
+
+FROM node:22-alpine
+WORKDIR /app
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/apps/web ./apps/web
+COPY --from=build /app/package.json ./package.json
+
+USER node
+EXPOSE 5173
+# `vite preview` serves the built assets and keeps the /api proxy, so the browser
+# never has to know where the API lives.
+CMD ["npm", "run", "preview", "-w", "@afx/web"]
