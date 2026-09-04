@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+data/*.duckdb
+data/*.duckdb.wal
+data/cache/
+.env
+.env.local
+.DS_Store
