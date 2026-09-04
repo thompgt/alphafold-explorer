@@ -22,6 +22,6 @@
       "@afx/ingest": ["packages/ingest/src/index.ts"]
     }
   },
-  "include": ["packages/*/src/**/*.ts", "apps/*/src/**/*.ts", "apps/*/src/**/*.tsx", "packages/*/test/**/*.ts"],
+  "include": ["packages/*/src/**/*.ts", "apps/api/src/**/*.ts", "packages/*/test/**/*.ts"],
   "exclude": ["node_modules", "**/dist"]
 }

@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "typecheck": "tsc --build",
+    "typecheck": "tsc --build && tsc --noEmit -p apps/web",
     "test": "vitest run",
     "test:watch": "vitest",
     "migrate": "npm run migrate -w @afx/core",
