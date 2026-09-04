@@ -1,0 +1,19 @@
+{
+  "name": "@afx/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@afx/core": "*",
+    "@afx/ingest": "*",
+    "@afx/llm": "*",
+    "@fastify/cors": "^10.0.1",
+    "fastify": "^5.12.1",
+    "zod": "^4.5.4"
+  }
+}

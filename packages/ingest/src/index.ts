@@ -5,3 +5,12 @@ export { findLowConfidenceSegments, summariseConfidence, MIN_SEGMENT_LENGTH } fr
 export { ingestAccession, type IngestReport, type IngestOutcome } from './ingest.ts';
 export { openObjectStore, localStore, s3Store, type ObjectStore } from './objectStore.ts';
 export { annotateAccession, collectFacts, pendingAnnotations, type AnnotateReport } from './annotate.ts';
+export {
+  buildChunks,
+  embedAccession,
+  ensureVectorIndex,
+  retrieveChunks,
+  type ChunkDraft,
+  type EmbedReport,
+  type RetrieveOptions,
+} from './embed.ts';
