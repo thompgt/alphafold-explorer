@@ -1,0 +1,19 @@
+{
+  "name": "@afx/ingest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": {
+    "ingest": "tsx src/cli/ingest.ts",
+    "annotate": "tsx src/cli/annotate.ts",
+    "embed": "tsx src/cli/embed.ts"
+  },
+  "dependencies": {
+    "@afx/core": "*",
+    "@afx/llm": "*",
+    "@aws-sdk/client-s3": "^3.1126.0"
+  }
+}
